@@ -1,0 +1,31 @@
+DECLARE @numRows int,@i int
+SET @numRows = 21
+SET @i=1
+--SET @name = 'Idea'
+DECLARE @name AS VARCHAR(100)='Judge'
+
+
+WHILE @i<@numRows
+BEGIN
+    INSERT into tblJudge values(@i,concat(@name, @i), 'admin') SELECT @i
+    SET @i=@i+1
+END
+
+
+
+DECLARE @numRows int,@i int
+SET @numRows = 61
+SET @i=1
+--SET @name = 'Idea'
+DECLARE @name AS VARCHAR(100)='Idea'
+
+
+WHILE @i<@numRows
+BEGIN
+    INSERT into tblIdea values(@i,concat(@name, @i), 'Discription') SELECT @i
+    SET @i=@i+1
+END
+
+
+
+
